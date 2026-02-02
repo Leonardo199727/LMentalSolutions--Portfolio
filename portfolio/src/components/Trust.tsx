@@ -3,7 +3,7 @@
 import { useLanguage } from '@/context/LanguageContext';
 import { translations, t } from '@/lib/translations';
 
-// Trust Icons
+
 const icons = {
     handshake: (
         <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,13 +31,11 @@ export default function Trust() {
     const { language } = useLanguage();
 
     return (
-        <section className="section relative overflow-hidden" style={{ background: 'var(--dark-secondary)' }}>
-            {/* Background Orbs */}
-            <div className="section-orb section-orb-accent" style={{ top: '50px', right: '10%' }} />
-            <div className="section-orb section-orb-primary" style={{ bottom: '-100px', left: '-50px', animationDelay: '2s' }} />
+        <section className="section relative overflow-hidden">
+
 
             <div className="container relative z-10">
-                {/* Section Header */}
+
                 <div className="text-center mb-16">
                     <h2 className="mb-4">{t(translations.trust.title, language)}</h2>
                     <p className="text-base mx-auto text-center mt-2" style={{ color: 'var(--muted)' }}>
@@ -45,7 +43,7 @@ export default function Trust() {
                     </p>
                 </div>
 
-                {/* Trust Items Grid - Centered content with hover effects */}
+
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
                         {translations.trust.items.map((item, index) => (
@@ -56,7 +54,7 @@ export default function Trust() {
                                     animationDelay: `${index * 100}ms`,
                                 }}
                             >
-                                {/* Icon - Centered */}
+
                                 <div
                                     className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110 mx-auto"
                                     style={{
@@ -67,7 +65,7 @@ export default function Trust() {
                                     {icons[item.icon as keyof typeof icons]}
                                 </div>
 
-                                {/* Content - Centered */}
+
                                 <h3 className="text-lg font-bold mb-3 text-center" style={{ color: 'var(--light)' }}>
                                     {t(item.title, language)}
                                 </h3>
@@ -79,7 +77,7 @@ export default function Trust() {
                     </div>
                 </div>
 
-                {/* Highlighted Promise */}
+
                 <div className="flex justify-center" style={{ marginTop: '5rem' }}>
                     <div
                         className="w-full max-w-4xl p-8 rounded-2xl text-center"

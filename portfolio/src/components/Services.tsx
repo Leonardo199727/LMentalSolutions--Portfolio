@@ -3,7 +3,7 @@
 import { useLanguage } from '@/context/LanguageContext';
 import { translations, t } from '@/lib/translations';
 
-// Service Icons
+
 const icons = {
     globe: (
         <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,12 +32,10 @@ export default function Services() {
 
     return (
         <section id="services" className="section relative overflow-hidden">
-            {/* Background Orbs */}
-            <div className="section-orb section-orb-primary" style={{ top: '-100px', right: '-150px' }} />
-            <div className="section-orb section-orb-secondary" style={{ bottom: '50px', left: '-100px', animationDelay: '3s' }} />
+
 
             <div className="container relative z-10">
-                {/* Section Header */}
+
                 <div className="text-center mb-16">
                     <h2 className="mb-4">{t(translations.services.title, language)}</h2>
                     <p className="text-base mx-auto text-center mt-2" style={{ color: 'var(--muted)' }}>
@@ -45,7 +43,7 @@ export default function Services() {
                     </p>
                 </div>
 
-                {/* Services Grid - Centered content */}
+
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
                         {translations.services.items.map((service, index) => (
@@ -56,7 +54,7 @@ export default function Services() {
                                     animationDelay: `${index * 100}ms`,
                                 }}
                             >
-                                {/* Icon - Centered */}
+
                                 <div
                                     className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110 mx-auto"
                                     style={{
@@ -67,7 +65,7 @@ export default function Services() {
                                     {icons[service.icon as keyof typeof icons]}
                                 </div>
 
-                                {/* Content - Centered */}
+
                                 <h3 className="text-lg font-bold mb-3" style={{ color: 'var(--light)' }}>
                                     {t(service.title, language)}
                                 </h3>

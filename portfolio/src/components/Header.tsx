@@ -33,7 +33,7 @@ export default function Header() {
     >
       <div className="container">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
+
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/LMICON.png"
@@ -48,7 +48,7 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+
           <div className="hidden md:flex flex-1 items-center justify-end gap-12">
             {navLinks.map((link) => (
               <Link
@@ -64,14 +64,13 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Right Side: Language Toggle + CTA */}
+
           <div className="flex items-center gap-4">
-            {/* Language Toggle Removed as per user request */}
 
 
 
-            {/* Mobile Menu Button */}
-            <button
+
+            < button
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
@@ -97,7 +96,6 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-80 mt-4' : 'max-h-0'
             }`}
@@ -117,7 +115,7 @@ export default function Header() {
 
           </div>
         </div>
-      </div>
-    </header>
+      </div >
+    </header >
   );
 }

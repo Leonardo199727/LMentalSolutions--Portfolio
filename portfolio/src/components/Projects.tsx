@@ -6,7 +6,7 @@ import { translations, t } from '@/lib/translations';
 export default function Projects() {
     const { language } = useLanguage();
 
-    // Placeholder projects for visual design (ready for future real projects)
+
     const placeholderProjects = [
         { color: 'var(--primary)', opacity: 0.15 },
         { color: 'var(--secondary)', opacity: 0.15 },
@@ -15,12 +15,10 @@ export default function Projects() {
 
     return (
         <section id="projects" className="section relative overflow-hidden">
-            {/* Background Orbs */}
-            <div className="section-orb section-orb-primary" style={{ bottom: '-50px', left: '20%' }} />
-            <div className="section-orb section-orb-secondary" style={{ top: '-80px', right: '-100px', animationDelay: '4s' }} />
+
 
             <div className="container relative z-10">
-                {/* Section Header */}
+
                 <div className="text-center mb-16">
                     <h2 className="mb-4 text-center">{t(translations.projects.title, language)}</h2>
                     <p className="text-base mx-auto text-center mt-2" style={{ color: 'var(--muted)' }}>
@@ -28,7 +26,7 @@ export default function Projects() {
                     </p>
                 </div>
 
-                {/* Projects Grid - Centered */}
+
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
                         {placeholderProjects.map((project, index) => (
@@ -40,7 +38,7 @@ export default function Projects() {
                                     border: '1px solid var(--dark-tertiary)',
                                 }}
                             >
-                                {/* Placeholder Pattern */}
+
                                 <div
                                     className="absolute inset-0 opacity-10"
                                     style={{
@@ -49,7 +47,7 @@ export default function Projects() {
                                     }}
                                 />
 
-                                {/* Coming Soon Overlay */}
+
                                 <div className="absolute inset-0 flex items-center justify-center p-6">
                                     <div className="text-center">
                                         <div
@@ -83,7 +81,7 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                {/* Hover Effect */}
+
                                 <div
                                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                     style={{
@@ -95,7 +93,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                {/* Coming Soon Message */}
+
                 <div className="text-center mt-12">
                     <p className="text-base mx-auto text-center" style={{ color: 'var(--muted)', lineHeight: '1.6' }}>
                         {t(translations.projects.comingSoon, language)}

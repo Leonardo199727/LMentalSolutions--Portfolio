@@ -8,32 +8,21 @@ export default function Hero() {
 
     const whatsappLink = `https://wa.me/524423178782?text=${encodeURIComponent(
         language === 'es'
-            ? 'Hola, me interesa agendar una sesión para conocer más sobre sus servicios.'
-            : 'Hi, I would like to book a session to learn more about your services.'
+            ? 'Hola, me interesa solicitar un diagnóstico gratuito para mi negocio.'
+            : 'Hi, I would like to request a free audit for my business.'
     )}`;
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Animated Background Orbs */}
-            <div className="hero-orb hero-orb-1" />
-            <div className="hero-orb hero-orb-2" />
-            <div className="hero-orb hero-orb-3" />
 
-            {/* Grid Pattern Overlay */}
-            <div
-                className="absolute inset-0 opacity-5"
-                style={{
-                    backgroundImage: `linear-gradient(var(--muted) 1px, transparent 1px),
-                           linear-gradient(90deg, var(--muted) 1px, transparent 1px)`,
-                    backgroundSize: '60px 60px',
-                }}
-            />
 
-            {/* Content - Perfectly centered */}
+
+
+
             <div className="container relative z-10 flex items-center justify-center py-32">
                 <div className="w-full max-w-4xl mx-auto text-center">
 
-                    {/* Headline */}
+
                     <h1
                         className="mb-6 animate-fade-in-up"
                         style={{ opacity: 0, animationDelay: '100ms', animationFillMode: 'forwards' }}
@@ -49,24 +38,25 @@ export default function Hero() {
                         )}
                     </h1>
 
-                    {/* Subheadline */}
+
                     <p
-                        className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto text-center animate-fade-in-up"
+                        className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto text-center animate-fade-in-up"
                         style={{
                             color: 'var(--muted)',
                             opacity: 0,
                             animationDelay: '200ms',
                             animationFillMode: 'forwards',
                             textAlign: 'center',
+                            lineHeight: '1.8',
                         }}
                     >
                         {t(translations.hero.subheadline, language)}
                     </p>
 
-                    {/* CTAs */}
+
                     <div
-                        className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
-                        style={{ opacity: 0, animationDelay: '300ms', animationFillMode: 'forwards', marginTop: '80px' }}
+                        className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up"
+                        style={{ opacity: 0, animationDelay: '300ms', animationFillMode: 'forwards', marginTop: '60px' }}
                     >
                         <a
                             href={whatsappLink}
@@ -89,7 +79,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
+
             <div
                 className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
                 style={{ opacity: 0.5 }}

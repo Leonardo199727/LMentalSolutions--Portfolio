@@ -15,54 +15,54 @@ export const translations = {
   // Hero Section
   hero: {
     headline: {
-      es: 'Tecnología que impulsa tu negocio',
-      en: 'Technology that drives your business',
+      es: 'Transformamos tu operación manual en sistemas digitales rentables',
+      en: 'Transform your manual operations into profitable digital systems',
     },
     subheadline: {
-      es: 'Transformo ideas en soluciones digitales a la medida. Desde páginas web hasta software especializado para que crezcas sin límites.',
-      en: "I transform ideas into custom digital solutions. From websites to specialized software so you can grow without limits.",
+      es: 'Desarrollo estratégico de software y sitios web diseñados para vender más y operar mejor. Sin tecnicismos, solo resultados medibles.',
+      en: "Strategic software and website development designed to sell more and operate better. No jargon, just measurable results.",
     },
-    ctaPrimary: { es: 'Agendar sesión gratuita', en: 'Book free session' },
-    ctaSecondary: { es: 'Ver servicios', en: 'View services' },
+    ctaPrimary: { es: 'Solicitar diagnóstico gratuito', en: 'Request free audit' },
+    ctaSecondary: { es: 'Ver soluciones', en: 'See solutions' },
   },
 
   // Services Section
   services: {
-    title: { es: 'Soluciones a tu medida', en: 'Tailored solutions' },
+    title: { es: 'Resultados que impulsan tu crecimiento', en: 'Results that drive your growth' },
     subtitle: {
-      es: 'Desarrollo tecnología que se adapta a las necesidades específicas de tu negocio',
-      en: 'I develop technology that adapts to your business specific needs',
+      es: 'Tecnología estratégica, no solo código',
+      en: 'Strategic technology, not just code',
     },
     items: [
       {
-        title: { es: 'Páginas Web', en: 'Websites' },
+        title: { es: 'Webs de Alta Conversión', en: 'High-Conversion Websites' },
         description: {
-          es: 'Diseño y desarrollo de sitios web modernos, responsivos y optimizados para convertir visitantes en clientes.',
-          en: 'Design and development of modern, responsive websites optimized to convert visitors into customers.',
+          es: 'No solo un sitio bonito. Una herramienta de ventas 24/7 optimizada para convertir visitas en clientes.',
+          en: 'Not just a pretty site. A 24/7 sales tool optimized to convert visitors into customers.',
         },
         icon: 'globe',
       },
       {
-        title: { es: 'Software a la Medida', en: 'Custom Software' },
+        title: { es: 'Automatización Operativa', en: 'Operational Automation' },
         description: {
-          es: 'Aplicaciones y sistemas personalizados que automatizan procesos y resuelven los retos únicos de tu operación.',
-          en: "Custom applications and systems that automate processes and solve your operation's unique challenges.",
+          es: 'Elimina hojas de cálculo y errores humanos. Sistemas que ahorran horas de trabajo a tu equipo cada semana.',
+          en: 'Eliminate spreadsheets and human error. Systems that save your team hours of work every week.',
         },
         icon: 'code',
       },
       {
         title: { es: 'Aplicaciones Web', en: 'Web Applications' },
         description: {
-          es: 'Plataformas web interactivas con funcionalidades avanzadas: dashboards, portales, herramientas internas.',
-          en: 'Interactive web platforms with advanced features: dashboards, portals, internal tools.',
+          es: 'Plataformas interactivas (dashboards, portales) para escalar tu servicio al cliente o gestión interna.',
+          en: 'Interactive platforms (dashboards, portals) to scale your customer service or internal management.',
         },
         icon: 'layout',
       },
       {
         title: { es: 'Consultoría Tecnológica', en: 'Tech Consulting' },
         description: {
-          es: 'Te ayudo a definir la mejor estrategia tecnológica para tu negocio, sin compromisos.',
-          en: 'I help you define the best tech strategy for your business, no strings attached.',
+          es: 'Auditoría de tu stack actual y hoja de ruta clara para digitalizar tu negocio sin gastar de más.',
+          en: 'Audit your current stack and clear roadmap to digitize your business without overspending.',
         },
         icon: 'lightbulb',
       },
@@ -130,10 +130,10 @@ export const translations = {
     },
     items: [
       {
-        title: { es: 'Compromiso real', en: 'Real commitment' },
+        title: { es: 'Tu Socio Tecnológico', en: 'Your Tech Partner' },
         description: {
-          es: 'No solo entrego código. Me involucro en tu negocio porque mi éxito depende de tu recomendación.',
-          en: "I don't just deliver code. I get involved in your business because my success depends on your recommendation.",
+          es: 'No desaparezco después del lanzamiento. Te acompaño para asegurar que la tecnología evolucione con tu negocio.',
+          en: 'I don\'t ghost after launch. I stay with you to ensure the technology evolves with your business.',
         },
         icon: 'handshake',
       },
@@ -166,12 +166,12 @@ export const translations = {
 
   // Contact Section
   contact: {
-    title: { es: '¿Listo para dar el siguiente paso?', en: 'Ready to take the next step?' },
+    title: { es: '¿Listo para escalar tu negocio?', en: 'Ready to scale your business?' },
     subtitle: {
-      es: 'Agenda una sesión gratuita donde conoceremos tu proyecto y definiremos juntos el mejor camino.',
-      en: "Book a free session where we'll learn about your project and define the best path together.",
+      es: 'Agenda una auditoría gratuita donde analizaremos tus cuellos de botella y definiremos una estrategia digital.',
+      en: "Book a free audit where we'll analyze your bottlenecks and define a digital strategy.",
     },
-    ctaPrimary: { es: 'Agendar mi sesión gratuita', en: 'Book my free session' },
+    ctaPrimary: { es: 'Solicitar mi auditoría gratuita', en: 'Request my free audit' },
     orText: { es: 'o escríbeme directamente', en: 'or contact me directly' },
     whatsapp: '+52 442 317 8782',
     email: 'lmata795@gmail.com',

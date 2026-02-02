@@ -1,6 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import GlobalBackground from '@/components/GlobalBackground';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -53,6 +54,7 @@ export default function RootLayout({
         <link rel="icon" href="/LMICON.png" type="image/png" />
       </head>
       <body className={inter.className}>
+        <GlobalBackground />
         {children}
       </body>
     </html>
