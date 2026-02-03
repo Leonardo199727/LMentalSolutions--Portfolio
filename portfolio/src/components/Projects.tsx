@@ -2,23 +2,33 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { translations, t } from '@/lib/translations';
+import ProjectCardFeatured from './ProjectCardFeatured';
+
+// Featured project data
+const featuredProject = {
+    title: {
+        es: 'DentalCare',
+        en: 'DentalCare',
+    },
+    description: {
+        es: 'Landing page de alta conversión diseñada para captar clientes y comunicar valor de servicios tecnológicos.',
+        en: 'High-conversion landing page designed to capture clients and communicate tech services value.',
+    },
+    heroImage: '/cap1.png',
+    gallery: ['/cap2.png', '/cap3.png', '/cap4.png', '/cap5.png', '/cap6.png', '/cap7.png', '/cap8.png', '/cap9.png'],
+};
 
 export default function Projects() {
     const { language } = useLanguage();
 
-
     const placeholderProjects = [
-        { color: 'var(--primary)', opacity: 0.15 },
         { color: 'var(--secondary)', opacity: 0.15 },
         { color: 'var(--accent)', opacity: 0.15 },
     ];
 
     return (
         <section id="projects" className="section relative overflow-hidden">
-
-
             <div className="container relative z-10">
-
                 <div className="text-center mb-16">
                     <h2 className="mb-4 text-center">{t(translations.projects.title, language)}</h2>
                     <p className="text-base mx-auto text-center mt-2" style={{ color: 'var(--muted)' }}>
@@ -26,9 +36,18 @@ export default function Projects() {
                     </p>
                 </div>
 
-
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+                        {/* Featured Project Card */}
+                        <ProjectCardFeatured
+                            title={featuredProject.title}
+                            description={featuredProject.description}
+                            heroImage={featuredProject.heroImage}
+                            gallery={featuredProject.gallery}
+                            language={language}
+                        />
+
+                        {/* Placeholder Cards */}
                         {placeholderProjects.map((project, index) => (
                             <div
                                 key={index}
@@ -38,7 +57,6 @@ export default function Projects() {
                                     border: '1px solid var(--dark-tertiary)',
                                 }}
                             >
-
                                 <div
                                     className="absolute inset-0 opacity-10"
                                     style={{
@@ -46,7 +64,6 @@ export default function Projects() {
                                         backgroundSize: '20px 20px',
                                     }}
                                 />
-
 
                                 <div className="absolute inset-0 flex items-center justify-center p-6">
                                     <div className="text-center">
@@ -81,7 +98,6 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-
                                 <div
                                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                     style={{
@@ -91,13 +107,6 @@ export default function Projects() {
                             </div>
                         ))}
                     </div>
-                </div>
-
-
-                <div className="text-center mt-12">
-                    <p className="text-base mx-auto text-center" style={{ color: 'var(--muted)', lineHeight: '1.6' }}>
-                        {t(translations.projects.comingSoon, language)}
-                    </p>
                 </div>
             </div>
         </section>
